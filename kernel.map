@@ -1,7 +1,7 @@
      VMA      LMA     Size Align Out     In      Symbol
        0        0 80200000     1 . = 0x80200000
-80200000 80200000       4a     2 .text
-80200000 80200000        e     2         /tmp/kernel-d4a4fd.o:(.text.boot)
+80200000 80200000       5a     2 .text
+80200000 80200000        e     2         /tmp/kernel-8166cc.o:(.text.boot)
 80200000 80200000        0     1                 .L0 
 80200000 80200000        0     1                 .L0 
 80200000 80200000        0     1                 $x
@@ -9,77 +9,80 @@
 80200000 80200000        e     1                 boot
 8020000e 8020000e        0     1                 .L0 
 8020000e 8020000e        0     1                 .L0 
-8020000e 8020000e       3c     2         /tmp/kernel-d4a4fd.o:(.text)
+8020000e 8020000e       4c     2         /tmp/kernel-8166cc.o:(.text)
 8020000e 8020000e        0     1                 .L0 
 8020000e 8020000e        0     1                 .L0 
 8020000e 8020000e        0     1                 $x
 8020000e 8020000e        0     1                 .L0 
-8020000e 8020000e       16     1                 memset
+8020000e 8020000e        6     1                 sbi_call
 80200012 80200012        0     1                 .L0 
-8020001e 8020001e        0     1                 .L0 
-80200022 80200022        0     1                 .L0 
-80200024 80200024        0     1                 .L0 
-80200024 80200024        0     1                 .L0 
-80200024 80200024        0     1                 .L0 
-80200024 80200024       26     1                 kernel_main
-8020002c 8020002c        0     1                 .L0 
+80200014 80200014        0     1                 .L0 
+80200014 80200014        0     1                 .L0 
+80200014 80200014        0     1                 .L0 
+80200014 80200014       14     1                 putchar
+80200028 80200028        0     1                 .L0 
+80200028 80200028        0     1                 .L0 
+80200028 80200028        0     1                 .L0 
+80200028 80200028       32     1                 kernel_main
+80200030 80200030        0     1                 .L0 
 80200038 80200038        0     1                 .L0 
-8020003a 8020003a        0     1                 .L0 
-8020003a 8020003a        0     1                 .L0 
-8020003e 8020003e        0     1                 .L0 
 80200044 80200044        0     1                 .L0 
 80200044 80200044        0     1                 .L0 
-80200048 80200048        0     1                 .L0 
-80200048 80200048        0     1                 .L0 
 8020004a 8020004a        0     1                 .L0 
-8020004a 8020004a        0     1                 .L0 
-8020004c 8020004c        0     4 .bss
-8020004c 8020004c        0     1         __bss = .
-8020004c 8020004c        0     1         __bss_end = .
-8020004c 8020004c        0     1 . = ALIGN(4)
-8020004c 8020004c    20000     1 . += 128 * 1024
-8022004c 8022004c        0     1 __stack_top = .
-       0        0       63     1 .debug_loclists
-       0        0       63     1         /tmp/kernel-d4a4fd.o:(.debug_loclists)
+80200050 80200050        0     1                 .L0 
+80200054 80200054        0     1                 .L0 
+80200058 80200058        0     1                 .L0 
+8020005a 8020005a        0     1                 .L0 
+8020005a 8020005a        0     1                 .L0 
+8020005c 8020005c       10     4 .rodata
+8020005c 8020005c       10     1         <internal>:(.rodata.str1.1)
+8020006c 8020006c        0     4 .bss
+8020006c 8020006c        0     1         __bss = .
+8020006c 8020006c        0     1         __bss_end = .
+8020006c 8020006c        0     1 . = ALIGN(4)
+8020006c 8020006c    20000     1 . += 128 * 1024
+8022006c 8022006c        0     1 __stack_top = .
+       0        0       54     1 .debug_loclists
+       0        0       54     1         /tmp/kernel-8166cc.o:(.debug_loclists)
        0        0        0     1                 $d
        c        c        0     1                 .L0 
-       0        0       e1     1 .debug_abbrev
-       0        0       e1     1         /tmp/kernel-d4a4fd.o:(.debug_abbrev)
+       0        0      156     1 .debug_abbrev
+       0        0      156     1         /tmp/kernel-8166cc.o:(.debug_abbrev)
        0        0        0     1                 $d
-       0        0       e3     1 .debug_info
-       0        0       e3     1         /tmp/kernel-d4a4fd.o:(.debug_info)
+       0        0      2ae     1 .debug_info
+       0        0      2ae     1         /tmp/kernel-8166cc.o:(.debug_info)
        0        0        0     1                 $d
-       0        0       17     1 .debug_rnglists
-       0        0       17     1         /tmp/kernel-d4a4fd.o:(.debug_rnglists)
+       0        0       1c     1 .debug_rnglists
+       0        0       1c     1         /tmp/kernel-8166cc.o:(.debug_rnglists)
        0        0        0     1                 $d
        c        c        0     1                 .L0 
-       0        0       48     1 .debug_str_offsets
-       0        0       48     1         /tmp/kernel-d4a4fd.o:(.debug_str_offsets)
+       0        0       8c     1 .debug_str_offsets
+       0        0       8c     1         /tmp/kernel-8166cc.o:(.debug_str_offsets)
        0        0        0     1                 $d
        8        8        0     1                 .L0 
-       0        0       ae     1 .debug_str
-       0        0       ae     1         <internal>:(.debug_str)
-       0        0       14     1 .debug_addr
-       0        0       14     1         /tmp/kernel-d4a4fd.o:(.debug_addr)
+       0        0       f0     1 .debug_str
+       0        0       f0     1         <internal>:(.debug_str)
+       0        0       20     1 .debug_addr
+       0        0       20     1         /tmp/kernel-8166cc.o:(.debug_addr)
        0        0        0     1                 $d
        8        8        0     1                 .L0 
        0        0       42     1 .comment
        0        0       42     1         <internal>:(.comment)
        0        0       4e     1 .riscv.attributes
        0        0       4e     1         <internal>:(.riscv.attributes)
-       0        0       44     4 .debug_frame
-       0        0       44     4         /tmp/kernel-d4a4fd.o:(.debug_frame)
+       0        0       54     4 .debug_frame
+       0        0       54     4         /tmp/kernel-8166cc.o:(.debug_frame)
        0        0        0     1                 .L0 
        0        0        0     1                 $d
-       0        0       a3     1 .debug_line
-       0        0       a3     1         /tmp/kernel-d4a4fd.o:(.debug_line)
+       0        0       ca     1 .debug_line
+       0        0       ca     1         /tmp/kernel-8166cc.o:(.debug_line)
        0        0        0     1                 .Lline_table_start0
        0        0        0     1                 $d
-       0        0       2d     1 .debug_line_str
-       0        0       2d     1         <internal>:(.debug_line_str)
-       0        0      160     4 .symtab
-       0        0      160     4         <internal>:(.symtab)
-       0        0       ce     1 .shstrtab
-       0        0       ce     1         <internal>:(.shstrtab)
-       0        0       68     1 .strtab
-       0        0       68     1         <internal>:(.strtab)
+       0        0       38     1 .debug_line_str
+       0        0       38     1         <internal>:(.debug_line_str)
+       0        0      180     4 .symtab
+       0        0      180     4         <internal>:(.symtab)
+       0        0       d6     1 .shstrtab
+       0        0       d6     1         <internal>:(.shstrtab)
+       0        0       75     1 .strtab
+       0        0       75     1         <internal>:(.strtab)
