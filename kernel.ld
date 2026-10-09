@@ -27,6 +27,7 @@ SECTIONS {
     . += 128 * 1024; /* 128KB */
     __stack_top = .;
 
+    /* Tarefas 1 e 5: Definir área de memória após o kernel e stack */
     . = ALIGN(4096);
     __free_ram = .;
     . += 64 * 1024 * 1024; /* 64MB */
